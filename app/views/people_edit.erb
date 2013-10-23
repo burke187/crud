@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Edit this person's info</h1>
+
+  <form action="/people/<%= @person.id %>/edit" method="post">
+
+    <label>Edit Name?<input type="text" name="people[name]" value="<%= @person.name %>"></label><br>
+
+    <label>Edit Age?<input type="text" name="people[age]" value="<%= @person.age %>"></label><br>
+
+    <input type="submit" name="click me!">
+
+  </form>
+
+</div>
